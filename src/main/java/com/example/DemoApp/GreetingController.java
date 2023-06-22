@@ -14,8 +14,7 @@ public class GreetingController {
     }
 
     @GetMapping("/calendar")
-    public String calendar(@RequestParam(name="name", required=false, defaultValue="World") String name, Model model) {
-        model.addAttribute("name", name);
+    public String calendar(Model model) {
         return "calendar";
     }
 
