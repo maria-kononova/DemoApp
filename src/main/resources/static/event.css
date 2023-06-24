@@ -1,0 +1,67 @@
+.k1{
+    font-size: 60px;
+    background: aqua;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+td, th {
+    border: 1px solid black;
+    padding: 3px;
+    text-align: center;
+}
+
+th {
+    font-weight: bold;
+    background-color: #E6E6E6;
+}
+
+/*Стили для увеличения картинок при наведении*/
+.scale_more {
+    display: inline-block; /* Строчно-блочный элемент */
+    overflow: hidden; /* Скрываем всё за контуром */
+}
+.scale_more img {
+    transition: 0.3s all ease-in; /* Время эффекта */
+    display: block; /* Убираем небольшой отступ снизу */
+}
+.scale_more img:hover {
+    transform: scale(1.03); /* Увеличиваем масштаб */
+    border-radius: 30px;
+}
+
+/*Стили для картинок в подробностях мероприятий*/
+.img_moreCard {
+    border-radius: 15px;
+    width: 620px;
+    height: 450px;
+}
+
+/*Стили для заголовка подробности карточки*/
+.h_moreCard {
+    color: #3333ef;
+    font-size: 30px;
+    margin-top: 15px;
+    margin-bottom: -5px;
+}
+
+.h2_moreCard {
+    color: #000;
+    font-size: 24px;
+    margin-top: 15px;
+    margin-bottom: -5px;
+}
+
+.h3_moreCard {
+    color: #000;
+    font-size: 20px;
+    margin-top: 15px;
+    margin-bottom: -5px;
+}
+
+/*Стили для даты / время / места карточки */
+.p_moreCard {
+    font-size: 16px;
+}

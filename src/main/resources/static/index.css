@@ -1,0 +1,32 @@
+/*Стили для увеличения картинок при наведении*/
+.scale {
+    display: inline-block; /* Строчно-блочный элемент */
+    overflow: hidden; /* Скрываем всё за контуром */
+}
+.scale img {
+    transition: 0.3s all ease-in; /* Время эффекта */
+    display: block; /* Убираем небольшой отступ снизу */
+}
+.scale img:hover {
+    transform: scale(1.03); /* Увеличиваем масштаб */
+    border-radius: 30px;
+}
+
+/*Стили для картинок в карточках*/
+.img_card {
+    border-radius: 15px;
+    width: 320px;
+    height: 190px;
+}
+
+/*Стили для заголовка карточки*/
+.h_card {
+    color: #005aaa;
+    font-size: 22px;
+    margin-bottom: 0px;
+}
+
+/*Стили для даты / время / места карточки */
+.p_card {
+    font-size: 14px;
+}
