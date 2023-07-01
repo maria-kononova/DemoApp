@@ -128,11 +128,31 @@
 <div id="page_title">
   <div class="container">
     <h1>Календарь мероприятий</h1>
-
+    <br/>
+    <p>Go to<a href="/addEvent"> add event</a></p>
     <div id="card_title">
       <div class="container">
         <div class="row">
+          <div class="col-md-12 col-md-offset-0">
+
+            <div class="wrapper">
+              <header>
+                <h2 class="monthView"></h2>
+                <div class="icons">
+                  <span id="prev" class="material-symbols-rounded" >◀</span>
+                  <span id="next" class="material-symbols-rounded">▶</span>
+                </div>
+              </header>
+              <div class="calendar">
+                <ul class="weeks">
+                </ul>
+                <ul class="days"></ul>
+              </div>
+            </div>
+            <script th:src="@{/index.js}"></script>
+          </div>
           <div class="col-md-4 col-md-offset-1">
+            <br/>
             <div class="scale">
               <picture>
                 <img class="img_card scale" alt="" src="https://img.freepik.com/free-vector/modern-desktop-compute-concept-illustration_114360-12156.jpg?w=1060&t=st=1687541857~exp=1687542457~hmac=bb355d7b1fc44732f8c027e41014cbf51049765bec8d1eb96037e219c78d3391">
@@ -147,6 +167,7 @@
           </div>
 
           <div class="col-md-4 col-md-offset-1">
+            <br/>
             <div class="scale">
               <picture>
                 <img class="img_card scale" alt="" src="https://img.freepik.com/premium-vector/on-the-office-concept-illustration_114360-1248.jpg?w=1060" >
@@ -161,6 +182,7 @@
           </div>
 
           <div class="col-md-4 col-md-offset-1">
+            <br/>
             <div class="scale">
               <picture>
                 <img class="img_card scale" alt="" src="https://img.freepik.com/free-vector/data-inform-illustration-concept_114360-864.jpg?w=1060&t=st=1687542339~exp=1687542939~hmac=7cc34a1c520a43483f45fa1360846847c990309fe97a2eba352023effd2f8d84">
@@ -180,6 +202,7 @@
     <div id="card_title2">
       <div class="container">
         <div class="row">
+
           <div class="col-md-4 col-md-offset-1">
             <div class="scale">
               <picture>
