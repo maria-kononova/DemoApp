@@ -16,4 +16,9 @@ public class GreetingController {
     public String moreEvent(Model model) {
         return "event";
     }
+    @GetMapping("/addEvent")
+    public String addEvent(Model model) {
+        return "addEvent";
+    }
+
 }
