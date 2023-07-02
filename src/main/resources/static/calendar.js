@@ -20,10 +20,7 @@ const weeks = ["Вс", "Пн", "Вт", "Ср", "Чт", "Пт", "Сб"];
 
 const renderCalendar = () => {
     dateList.clear();
-    let firstDayofMonth = new Date(currYear, currMonth, currDay).getDay(), // getting first day of month
-        lastDateofMonth = new Date(currYear, currMonth + 1, 0).getDate(), // getting last date of month
-        lastDayofMonth = new Date(currYear, currMonth, lastDateofMonth).getDay(), // getting last day of month
-        lastDateofLastMonth = new Date(currYear, currMonth, 0).getDate(); // getting last date of previous month
+    let lastDateofMonth = new Date(currYear, currMonth + 1, 0).getDate(); // getting last date of month
     let liTag = "";
     let liTag2 = "";
 

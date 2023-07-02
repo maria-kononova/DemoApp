@@ -5,7 +5,7 @@
       crossorigin="anonymous">
 <link rel="stylesheet" th:href="@{/event.css}" />
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
-<script src="../static/index.js" defer></script>
+<script src="../static/calendar.js" defer></script>
 <head>
   <title >Getting Started: Serving Web Content</title>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
@@ -125,16 +125,70 @@
       <div class="col-md-12 col-md-offset-0">
         <div>
           <h1 class="h_moreCard">VIII Отраслевой чемпионат профессионального мастерства рабочих и инженерных профессий Государственной корпорации по атомной энергии «Росатом» - AtomSkills-2023</h1>
+
         </div>
       </div>
     </div>
 
-    <div class="row" style="margin: 20px 0px;">
+    <div class="row">
       <div class="col-md-7 col-md-offset-0">
         <div class="scale_more">
           <picture>
             <img class="img_moreCard scale_more" alt="" src="https://img.freepik.com/free-vector/data-inform-illustration-concept_114360-864.jpg?w=1060&t=st=1687542339~exp=1687542939~hmac=7cc34a1c520a43483f45fa1360846847c990309fe97a2eba352023effd2f8d84">
           </picture>
+        </div>
+        <div id="description_card_more">
+          <div class="container">
+            <div class="row">
+              <h2 class="h_moreCard">Описание мероприятия</h2>
+              <p class="p_margin">VIII Отраслевой чемпионат
+                профессионального мастерства Госкорпорации «Росатом» пройдет с
+                16 по 21 июня в Екатеринбурге, на площадке МВЦ «Екатеринбург-
+                Экспо».</p>
+              <p class="p_margin">AtomSkills является одним из
+                наиболее значимых и масштабных корпоративных чемпионатов в
+                Российской Федерации. В 2023 году чемпионат впервые пройдет в
+                международном формате.</p>
+              <p class="p_margin">В соревновательную часть AtomSkills-
+                2023 войдет 40 компетенций, включая специальную номинацию для
+                студентов вузов «Технологический прорыв: Квантовые
+                технологии», в рамках каждой из которых участники будут
+                бороться за звание лучшего в своей профессии. Часть
+                компетенций пройдет в формате командных соревнований
+                («Инженерное мышление. Каракури», «Информационная
+                безопасность», «Математическое моделирование» и другие).</p>
+              <p class="p_margin">Конкурсные задания чемпионата были
+                подготовлены экспертами различных направлений и консолидируют
+                отраслевые и международные требования к компетенциям. Критерии
+                и параметры оценки уровней владения профессиональными знаниями
+                и навыками основаны на подходах WorldSkills, адаптированы к
+                задачам технологического развития Госкорпорации «Росатом».</p>
+              <p class="p_margin">В рамках AtomSkills-2023 будет также
+                организована обширная деловая программа. Ключевыми событиями
+                станут панельные дискуссии, конференции, круглые столы,
+                мастер-классы, аналитические и проектные сессии, посвященные
+                вопросам подготовки кадров для решения задач по прорывному
+                технологическому развитию Госкорпорации «Росатом». На площадке
+                чемпионата будут представлены лучшие практики атомной отрасли
+                по вопросам подготовки кадров в направлениях: «Отраслевые
+                центры компетенций Росатома», «Атомные школы сварки»,
+                федеральный проект «Профессионалитет» и других.</p>
+              <p class="p_margin">Часть мероприятий деловой программы
+                будут транслироваться в прямом эфире на сайте чемпионата и
+                предполагают участие в онлайн-формате.</p>
+              <p class="p_margin">Все участники и гости AtomSkills
+                2023 смогут пройти специальный трек «ВЕКтор открытий»,
+                подготовленный Советом Юниоров Росатома.</p>
+              <p class="p_margin">Кроме того, на площадке AtomSkills-
+                2023 состоится финал III Cемейного фестиваля «КараКУРАЖ»,
+                посвященного развитию навыков решения технических и инженерных
+                задач с помощью собственных новаторских идей и искусства
+                «каракури», пришедшего из Японии. Организаторами мероприятия
+                являются Корпоративная Академия Росатома совместно с
+                партнерами - АНО «ИЦАО» и Топливной компанией Росатома
+                «ТВЭЛ».</p>
+            </div>
+          </div>
         </div>
       </div>
       <div class="col-md-5 col-md-offset-0">
@@ -152,9 +206,66 @@
           <p class="h3_moreCard" style="color: #e70f47;">Как связаться?</p>
           <p class="p_moreCard_moreCard">89308810380</p>
           <hr color="#800080" size="10" align="left">
+          <h2 class="h_moreCard">Документы и программа мероприятия</h2>
+
+          <div class="row" style="margin: 20px 0px;">
+            <div class="wt-doc">
+              <i class="far fa-file-pdf"></i>
+              <p><a target="_blank"
+                    href="https://atomskills.ru/program/img/20230617_02.png">«Студенческий форум AtomSkills-
+                2023»</a><small>17.06.2023</small></p>
+            </div>
+            <div class="wt-doc">
+              <i class="far fa-file-pdf"></i>
+              <p><a target="_blank"
+                    href="https://atomskills.ru/upload/rules_atomskills_2023.pdf">«Положение о мероприятии AtomSkills»</a><small>17.06.2023</small></p>
+            </div>
+            <p class="p_margin">Более подробную информацию можно
+              получить на официальном сайте чемпионата: <a
+                      href="https://atomskills.ru/">atomskills.ru</a></p>
+          </div>
         </div>
       </div>
     </div>
   </div>
 
 </div>
+
+<footer>
+  <div id="node_footer">
+    <div class="container">
+      <h4>
+        Управление цифрового развития
+      </h4>
+
+      <p><span>Телефон:</span><span class="citycode">(812)</span>&nbsp;494-70-82</p>
+
+    </div>
+  </div>
+  <div class="container">
+    <p style="font-size: .8rem; margin-bottom: 3rem;">
+      На страницах сайта использованы <a href="https://ru.freepik.com/author/stories">изображения от storyset</a> / Freepik
+    </p>
+  </div>
+
+
+  <div id="site_footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-2 col-md-8">
+          <img src="https://src.guap.ru/files/logos/guap_w_sm.png" alt="ГУАП" />
+        </div>
+        <div class="col-lg-6 col-md-8">
+          Федеральное государственное автономное образовательное учреждение высшего образования <nobr>«Санкт-Петербургский</nobr> государственный университет аэрокосмического приборостроения»
+        </div>
+        <div class="col-lg-4 col-md-8 dev-info">
+          Сделано в <a href="https://guap.ru/it">УЦР ГУАП</a><br />
+          <small>00:00:01.0781679</small>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</footer>
+</body>
+</html>
