@@ -1,7 +1,7 @@
 const daysTag = document.querySelector(".days"),
     weeksTag = document.querySelector(".weeks"),
     monthView = document.querySelector(".monthView"),
-
+    liAction = document.querySelectorAll(".days li"),
     prevNextIcon = document.querySelectorAll(".icons span");
 
 // getting new date, current year and month
@@ -68,7 +68,7 @@ const renderCalendar = () => {
         for (let i = 0; i < Days.length; i++) {
             let isToday = Days[i] === date.getDate() && currMonth === new Date().getMonth()
             && currYear === new Date().getFullYear() ? "active" : "";
-            liTag += `<li class="${isToday}">${Days[i]}</li>`;
+            liTag += `<li class="${isToday}"  onclick="getDate()">${Days[i]}</li>`;
             liTag2 += `<li class="inactive">${weeks[indexWeek]}</li>`;
             if (indexWeek === 6) indexWeek = 0;
             else indexWeek++;
@@ -79,10 +79,23 @@ const renderCalendar = () => {
     weeksTag.innerHTML = liTag2;
 }
 renderCalendar();
-
-
-
-prevNextIcon.forEach(icon => { // getting prev and next icons
+function getDate() {
+    let result = "";
+    let liContent = event.target.textContent;
+    for( let [yearMonth, Days] of dateList)
+    {
+        for (let i = 0; i < Days.length; i++) {
+            if (Days[i]==liContent)
+            {
+                let month = Number(yearMonth.split('-')[1])+1;
+                result += yearMonth.split('-')[0]+'-'+month+'-'+Days[i];
+                break;
+            }
+        }
+    }
+    alert(result);
+}
+        prevNextIcon.forEach(icon => { // getting prev and next icons
     icon.addEventListener("click", () => { // adding click event on both icons
         // if clicked icon is previous icon then decrement current month by 1 else increment it by 1
         if (icon.id === "prev")
@@ -103,7 +116,7 @@ prevNextIcon.forEach(icon => { // getting prev and next icons
                 currDay-=10;
             }
         }
-        else
+        else if (icon.id === "next")
         {
             let lastDayOfMonth = new Date(currYear, currMonth + 1, 0).getDate();
             if (currDay+10 > lastDayOfMonth){
@@ -119,6 +132,11 @@ prevNextIcon.forEach(icon => { // getting prev and next icons
             {
                 currDay +=10;
             }
+        }
+        else {
+            currYear = date.getFullYear();
+            currMonth = date.getMonth();
+            currDay  = date.getDate();
         }
         renderCalendar(); // calling renderCalendar function
     });

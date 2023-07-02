@@ -60,16 +60,16 @@ header .icons{
     display: flex;
 }
 header .icons span{
-    height: 38px;
-    width: 38px;
-    margin: 0 1px;
+    height: 50px;
+    width: 50px;
+
     cursor: pointer;
     color: #878787;
     text-align: center;
     line-height: 38px;
     font-size: 1.9rem;
     user-select: none;
-    border-radius: 50%;
+    border-radius: 30%;
 }
 .icons span:last-child{
     margin-right: -10px;
@@ -126,6 +126,9 @@ header .current-date{
 }
 .days li.active::before{
     background: #e70f47;
+}
+.days li:hover{
+    color: white;
 }
 .days li:not(.active):hover::before{
     background: #005aaa;
