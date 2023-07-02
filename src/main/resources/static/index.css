@@ -43,7 +43,10 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
-
+.monthView{
+    font-size: 1.9rem;
+    padding: 20px 50px 5px;
+}
 .wrapper{
     width: 100%;
     background: #fff;
@@ -53,22 +56,22 @@
 .wrapper header{
     display: flex;
     align-items: center;
-    padding: 25px 30px 10px;
     justify-content: space-between;
 }
 header .icons{
     display: flex;
+    margin-right: 20px;
 }
 header .icons span{
     height: 50px;
     width: 50px;
-
     cursor: pointer;
     color: #878787;
     text-align: center;
     line-height: 38px;
     font-size: 1.9rem;
     user-select: none;
+
     border-radius: 30%;
 }
 .icons span:last-child{
@@ -79,10 +82,9 @@ header .icons span:hover{
 }
 header .current-date{
     font-size: 1.45rem;
-    font-weight: 500;
 }
 .calendar{
-    padding: 20px;
+    padding: 5px;
 }
 .calendar ul{
     display: flex;
@@ -96,7 +98,7 @@ header .current-date{
 .calendar li{
     color: #333;
     width: calc(100% / 10);
-    font-size: 1.07rem;
+    font-size: 1.0rem;
 }
 .calendar .weeks li{
     color: #878787;
